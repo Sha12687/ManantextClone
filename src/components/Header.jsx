@@ -7,7 +7,7 @@ function Header() {
 
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
   return (
-    <div className="px-5 h-12 flex justify-between items-center bg-white">
+    <div className="sticky top-0 z-50 bg-white px-5 h-12 flex justify-between items-center">
       <div className="">
         <h1>logo</h1>
       </div>
@@ -28,7 +28,8 @@ function Header() {
               </ul>
             )}
           </li>
-        
+          <li>Our Advantage</li>
+
           <li
             onMouseEnter={() => setIsProductDropdownOpen(true)}
             onMouseLeave={() => setIsProductDropdownOpen(false)}

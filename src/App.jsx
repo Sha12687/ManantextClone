@@ -1,13 +1,16 @@
 import React from 'react'
-import TopHeader from './components/TopHeader'
-import Header from './components/Header'
 import Home from './Pages/Home'
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import OurAdvantage from './Pages/OurAdvantage'
 function App() {
   return (
-    <>
-    <Home/>
-    </>
+
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/our_advantage" element={<OurAdvantage />} />
+      </Routes>
+    </Router>
   )
 }
 
